@@ -1,0 +1,179 @@
+/*======================================================
+        GENERAL STYLES
+======================================================*/
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*======================================================
+    COLOR PALETTE
+======================================================*/
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs */
+    --very-light-grey: hsl(0, 0%, 95%); /*buttons,headings, background */
+}
+
+body{
+    font-family:'Lexend Deca', sans-serif;
+    background-color:var(--very-light-grey);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    /* min-height:100vh; */
+    
+    
+    
+}
+
+.main{
+    margin-top:48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius:10px;
+    overflow:hidden;
+    min-height:100vh;
+   
+ 
+   
+}
+
+h1{
+    font-family:'Big Shoulders Display', cursive;
+    font-size:2.5rem;
+    line-height:3rem;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:hsl(0, 0%, 95%);
+    margin-bottom:25px;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    display:block;
+    width:70%;
+    color:rgba(255, 255, 255, 1);
+
+    font-weight:lighter;
+    letter-spacing:1px;
+    line-height:25px;
+    text-align:left;
+    margin-bottom:25px;
+}
+
+/*========================== CARD STYLES ============================*/
+
+.card{
+    width:327px;
+    height:460px;
+    padding:48px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.card-icon{
+    width:64px;
+    height:40px;
+}
+
+
+#card-one{
+    background-color: var(--bright-orange);
+    
+}
+
+#card-two{
+    background-color:var(--dark-cyan);
+    
+}
+
+#card-three{
+    background-color:var(--very-dark-cyan);
+    
+
+}
+
+
+
+.btn{
+   
+    background-color: var(--very-light-grey);
+    width:fit-content;
+    font-family:'Lexend Deca', sans-serif;
+    font-size:0.9375rem;
+    padding:0.625rem 1.25rem;
+    border-radius:1.5625rem;
+    border:2px solid var(--transparent-white);
+
+    
+
+}
+
+
+#btn-first{
+    color:var(--bright-orange);
+}
+
+#btn-second{
+    color:var(--dark-cyan);
+}
+
+#btn-third{
+    color:var(--very-dark-cyan);
+    margin-top:23px;
+}
+
+
+#btn-first:hover,
+#btn-first:focus{
+    background-color:var(--bright-orange);
+    color:var(--very-light-grey);
+}
+
+#btn-second:hover,
+#btn-second:focus{
+    background-color:var(--dark-cyan);
+}
+
+#btn-third:hover,
+#btn-third:focus{
+    background-color:var(--very-dark-cyan);
+    color:var(--very-light-grey);
+}
+
+
+
+footer{
+    color:black;
+    padding-top:10px;
+    background-color:white;
+    
+   text-align: center;
+    justify-content: center;
+}  
+/*========================================================================
+Media Queries
+========================================================================*/
+@media(max-width:978px){
+    .main{
+        flex-direction:column;
+        align-items:center;
+        
+    }
+
+
+}
