@@ -63,12 +63,12 @@ a{
 
 p{
     display:block;
-    width:70%;
+    width:231px;
     color:rgba(255, 255, 255, 1);
 
     font-weight:lighter;
     letter-spacing:1px;
-    line-height:25px;
+
     text-align:left;
     margin-bottom:25px;
 }
@@ -77,7 +77,7 @@ p{
 
 .card{
     width:327px;
-    height:460px;
+    height:500px;
     padding:48px;
     border-radius:8px;
     display:flex;
@@ -88,6 +88,7 @@ p{
 .card-icon{
     width:64px;
     height:40px;
+    margin-bottom:27px;
 }
 
 
@@ -118,6 +119,7 @@ p{
     padding:0.625rem 1.25rem;
     border-radius:1.5625rem;
     border:2px solid var(--transparent-white);
+    margin-bottom:48px;
 
     
 
@@ -134,7 +136,7 @@ p{
 
 #btn-third{
     color:var(--very-dark-cyan);
-    margin-top:23px;
+    
 }
 
 
@@ -147,6 +149,7 @@ p{
 #btn-second:hover,
 #btn-second:focus{
     background-color:var(--dark-cyan);
+    color:var(--very-light-grey);
 }
 
 #btn-third:hover,
@@ -159,7 +162,9 @@ p{
 
 footer{
     color:black;
+    margin-top:10px;
     padding-top:10px;
+    padding-bottom:10px;
     background-color:white;
     
    text-align: center;
@@ -168,6 +173,10 @@ footer{
 /*========================================================================
 Media Queries
 ========================================================================*/
+
+@media(min-width:899px){
+   
+}
 @media(max-width:978px){
     .main{
         flex-direction:column;
@@ -177,3 +186,4 @@ Media Queries
 
 
 }
+
