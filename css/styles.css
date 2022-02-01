@@ -34,6 +34,7 @@ body{
 }
 
 .main{
+    margin:0 auto;
     margin-top:48px;
     display: flex;
     align-items: center;
@@ -160,7 +161,7 @@ p{
 
 
 
-footer{
+/* footer{
     color:black;
     margin-top:10px;
     padding-top:10px;
@@ -168,15 +169,13 @@ footer{
     background-color:white;
     
    text-align: center;
-    justify-content: center;
-}  
+justify-content: center;
+}   */
 /*========================================================================
 Media Queries
 ========================================================================*/
 
-@media(min-width:899px){
-   
-}
+
 @media(max-width:978px){
     .main{
         flex-direction:column;
@@ -186,4 +185,11 @@ Media Queries
 
 
 }
+
+@media(min-width:1414px){
+    footer{
+        padding:10px;
+    }
+}
+
 
